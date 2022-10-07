@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .format{
+        background-color: rgb(205, 199, 210);
+        color: black;
+        font-size: 15px;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        /*margin-top: 1px solid black;*/
+    }
+    h2{
+        text-align: center;
+        border-radius: 15px;
+        font-size: 30px;
+        background-color:rgb(205, 199, 210) ;
+        padding: 10px;
+    }
+    input:hover{
+        color: red;
+        transform: rotate3d(30);
+    }
+   </style>
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form class="format">
+
+        <div>
+          <label for="fullname"> FullName:</label>
+          <input type="text" name="fullname" id="fullname" required>
+        </div><br>
+
+        <div>
+            <label for="fname"> Father's Name:</label>
+            <input type="text" name="fname" id="fname" required>
+          </div><br>
+       
+        <div>
+            <label for="email"> Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email address">
+          </div><br>
+
+          <div>
+            <label for="password"> Password:</label>
+            <input type="password" name="password" id="password">
+          </div><br>
+
+          <div>
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob" id="dob">
+          </div><br>
+
+          <div>
+            <label for="photo">Choose your photo:</label>
+            <input type="file" name="photo" id="photo">
+          </div><br>
+
+          <div>
+            <label for="gender"> Gender:</label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <input type="radio" name="gender" id="gender" value="others">Others
+          </div><br>
+
+          <div>
+            <label for="religion"> Religion:</label>
+            <input type="checkbox" name="religion" id="religion" value="islam">Islam
+            <input type="checkbox" name="religion" id="religion" value="hindu">Hindu
+          </div><br>
+
+          <div>
+            <label for="department">Department :</label>
+             <select name="department">
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="LLB">LLB</option>
+                <option value="IBA">IBA</option>
+             </select>
+          </div><br>
+
+          <div>
+            <label for="message">Message:</label><br>
+           <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div><br>
+
+          <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+          </div>
+    </form>
+</body>
+</html>
